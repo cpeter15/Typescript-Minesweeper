@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 2em;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+#game-window {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.menu {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#difficulty-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+#difficulty-options button {
+    margin: 10px;
+}
+
+.difficulty-option {
+    width: 100%;
+    margin: 10px
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    width: 30px;
+
+    -moz-appearance: textfield;
+}
+
+
+
+.custom-inputs {
+    margin-left: 10px;
+}
+
+
+#stat-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.counter {
+    font-size: 2em;
+}
+
+.timer {
+    font-size: 2em
+}
+
+
+#board {
+    display: flex;
+    /* margin: auto; */
+    flex-wrap: wrap;
+}
+
+#gameDiv {
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.spaces {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border: 2px outset gray;
+}
+
+.spaces-reveled {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1em;
+}
+
+.spaces-flagged {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png');
+    background-size: contain;
+}
+
+.spaces-bomb {
+    background-image: url("https://img.icons8.com/fluency-systems-filled/48/000000/naval-mine.png");
+    background-size: contain;
+}
+
+#game-over-menu {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+}
